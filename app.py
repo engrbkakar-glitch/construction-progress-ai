@@ -123,6 +123,7 @@ st.dataframe(
             "weight",
             "physical_progress",
             "financial_progress"
+             "variance"
         ]
     ],
     use_container_width=True,
