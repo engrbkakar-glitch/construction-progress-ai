@@ -1,1 +1,7 @@
 
+item_id,activity,unit,boq_quantity,rate,boq_amount,weight
+E01,Earthwork,m3,1000,500,500000,20
+S01,Sub-base,m3,500,1500,750000,15
+B01,Base Course,m3,400,2500,1000000,20
+A01,Asphalt,ton,100,17500,1750000,35
+D01,Drainage,m,500,1000,500000,10
