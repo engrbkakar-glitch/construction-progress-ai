@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 
 boq = pd.read_csv("data/boq.csv")
+data["variance"] = (
+    data["physical_progress"] - data["financial_progress"]
+)
 progress = pd.read_csv("data/progress.csv")
 
 data = boq.merge(progress, on="item_id")
