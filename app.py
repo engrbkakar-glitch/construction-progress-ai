@@ -72,3 +72,12 @@ else:
         "✅ Physical and financial progress "
         "are relatively aligned."
     )
+st.divider()
+
+st.subheader("📋 Project BOQ")
+
+st.dataframe(
+    boq,
+    use_container_width=True,
+    hide_index=True
+)
