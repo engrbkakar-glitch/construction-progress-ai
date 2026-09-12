@@ -122,8 +122,8 @@ st.dataframe(
             "activity",
             "weight",
             "physical_progress",
-            "financial_progress"
-             "variance"
+            "financial_progress",
+            "variance"
         ]
     ],
     use_container_width=True,
