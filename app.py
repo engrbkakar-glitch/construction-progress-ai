@@ -70,13 +70,31 @@ with col4:
 # Warning
 if variance < -10:
     st.error(
-        "⚠️ Financial progress is significantly "
-        "ahead of physical progress."
+        f"⚠️ Financial progress is significantly ahead "
+        f"of physical progress by {abs(variance):.2f} percentage points."
     )
+
+elif variance < 0:
+    st.warning(
+        f"⚠️ Financial progress is ahead of physical progress "
+        f"by {abs(variance):.2f} percentage points."
+    )
+
+elif variance > 10:
+    st.warning(
+        f"⚠️ Physical progress is significantly ahead "
+        f"of financial progress by {variance:.2f} percentage points."
+    )
+
+elif variance > 0:
+    st.info(
+        f"ℹ️ Physical progress is ahead of financial progress "
+        f"by {variance:.2f} percentage points."
+    )
+
 else:
     st.success(
-        "✅ Physical and financial progress "
-        "are relatively aligned."
+        "✅ Physical and financial progress are aligned."
     )
 st.divider()
 
