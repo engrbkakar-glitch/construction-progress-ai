@@ -1,3 +1,6 @@
+import streamlit as st
+import pandas as pd
+
 boq = pd.read_csv("data/boq.csv")
 progress = pd.read_csv("data/progress.csv")
 
@@ -16,7 +19,7 @@ financial_progress = (
 ).sum()
 
 variance = physical_progress - financial_progress
-# Page configuration
+
 st.set_page_config(
     page_title="Construction Progress Monitor",
     page_icon="🏗️",
