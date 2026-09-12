@@ -113,8 +113,13 @@ st.dataframe(
 )
 st.divider()
 
-st.subheader("📊 Activity-Level Progress")
+st.subheader("📈 Progress Comparison")
 
+st.bar_chart(
+    data.set_index("activity")[
+        ["physical_progress", "financial_progress"]
+    ]
+)
 st.dataframe(
     data[
         [
