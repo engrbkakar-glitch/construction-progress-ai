@@ -2,15 +2,12 @@ import streamlit as st
 import pandas as pd
 
 boq = pd.read_csv("data/boq.csv")
-data["variance"] = (
-    data["physical_progress"] - data["financial_progress"]
-)
 progress = pd.read_csv("data/progress.csv")
 
 data = boq.merge(progress, on="item_id")
 
-physical_progress = (
-    data["physical_progress"] * data["weight"] / 100
+data["variance"] = (
+    data["physical_progress"] - data["financial_progress"]
 ).sum()
 financial_progress = (
     data["financial_progress"] * data["weight"] / 100
