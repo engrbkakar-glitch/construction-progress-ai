@@ -3,6 +3,8 @@ import pandas as pd
 
 boq = pd.read_csv("data/boq.csv")
 progress = pd.read_csv("data/progress.csv")
+
+data = boq.merge(progress, on="item_id")
 # Page configuration
 st.set_page_config(
     page_title="Construction Progress Monitor",
