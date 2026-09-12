@@ -12,6 +12,7 @@ physical_progress = (
 financial_progress = (
     data["financial_progress"] * data["weight"] / 100
 ).sum()
+variance = physical_progress - financial_progress
 # Page configuration
 st.set_page_config(
     page_title="Construction Progress Monitor",
