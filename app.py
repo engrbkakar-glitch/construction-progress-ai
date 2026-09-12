@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+boq = pd.read_csv("data/boq.csv")
 # Page configuration
 st.set_page_config(
     page_title="Construction Progress Monitor",
