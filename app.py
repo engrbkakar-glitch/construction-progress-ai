@@ -36,11 +36,6 @@ st.subheader("Project Overview")
 project_name = "Small Construction Project"
 contract_amount = 4500000
 
-# Demo progress
-physical_progress = 48
-financial_progress = 62
-
-variance = physical_progress - financial_progress
 
 # Display project
 st.write(f"**Project:** {project_name}")
